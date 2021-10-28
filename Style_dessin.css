@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color:white;
+	font-size: 25px;
+	padding: 0px;
+	margin: 0px;
+	background-color: #605F57;
+}
+#baniere_menu{
+	width: 100%;
+	height: -10px;
+}
+#contenu_menu{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 50px;
+	margin-bottom: 100px;
+}
+#titre_page{
+	font-size: 20vh;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 500px;
+	margin-top: 350px;
+}
+#container /* contient l'ensemble de la grille*/{
+	margin: 100px;
+	display: grid; /*afficher la grille*/
+	grid-template-columns: repeat(6, 1fr); /* répeter 6x une colonne = à une fraction*/ 
+	grid-auto-rows: 250px; /* rangées de 200px à la suite*/
+	grid-gap: 10px; /*espacements*/
+	grid-auto-flow: dense;/*algorythme de placement des élements dans la grille rows par lignes, columns par colonnes, dense pour tout remplir par rapport à la taille des élements*/
+}
+.w-1{
+	grid-column: span 1;
+}
+.w-2{
+	grid-column: span 2;
+}
+.w-3{
+	grid-column: span 3;
+}
+.w-4{
+	grid-column: span 4;
+}
+.w-5{
+	grid-column: span 5;
+}
+.w-6{
+	grid-column: span 6;
+}
+.h-1{
+	grid-row: span 1;
+}
+.h-2{
+	grid-row: span 2;
+}
+.h-3{
+	grid-row: span 3;
+}
+.h-4{
+	grid-row: span 4;
+}
+.h-5{
+	grid-row: span 5;
+}
+.h-6{
+	grid-row: span 6;
+}
+#contact-bouton{
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#contact_fleche{
+	margin-right: 55px;
+	margin-top: 10px;
+	width: 50px;
+	height: auto;
+}
+#pied{
+	height: 160px;
+	width: 100%;
+	background-color:#2B2B2B;
+	z-index: 5;
+	margin:0;
+	padding: 0;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 12fr 12fr 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+}
+#email a{
+	color: #707070;
+}
+#email a:hover{
+	color: #505050;
+}
+#email{
+	font-size: 40px; 
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#copyright{
+	font-size: 20px;
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: #464646;
+}
+.logos_rs{
+	font-size: 45px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.logos_rs a{
+	color: #707070;
+}
+.logos_rs a:hover{
+	color: #505050;
+}
+.gallery_items{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.gallery_items .image/*affect le cadre de l'image uniquement*/{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;/*défini comment se comporte une image trop grande (scroll bar ou rognage etc...)*/
+}
+.gallery_items .image img/*affect l'image en elle-même*/{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	cursor: pointer;
+	transition:.5s ease-in-out;/*le temps que prend l'objet à passer d'un état à un autre*/
+}
+.gallery_items:hover/*quand survolé*/ .image img{
+	transform: scale(1.5);
+}
+.gallery_items .text{
+	opacity: 0;
+	font-weight: bold;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	text-shadow: #404040 5px 5px 2px;
+	pointer-events: none;
+	font-size: 50px;
+	z-index: 4;
+	transition: .3s ease-in-out;
+}
+.gallery_items:hover .text{
+	opacity: 1;
+}
+.menu{float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+}
+.gris{
+	color: #444444;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+a:hover{
+	color: #444444;
+}
+

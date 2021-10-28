@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color:white;
+	font-size: 25px;
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+}
+#plein_ecran{
+	width: 100%;
+	/*position: relative;
+	z-index: -2;*/
+}
+#baniere_menu{
+	width: 100%;
+	height: -10px;
+}
+#contenu_menu{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 50px;
+	margin-bottom: -100px;
+	position: relative;
+	z-index: 99;
+}
+#plus_tard{
+	text-align: center;
+	font-size: 45px;
+}
+#contact-bouton{
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#contact_fleche{
+	margin-right: 55px;
+	margin-top: 10px;
+	width: 50px;
+	height: auto;
+}
+#pied{
+	height: 160px;
+	width: 100%;
+	background-color:#2B2B2B;
+	z-index: 5;
+	margin:0;
+	padding: 0;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 12fr 12fr 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+}
+#email a{
+	color: #707070;
+}
+#email a:hover{
+	color: #505050;
+}
+.logos_rs a{
+	color: #707070;
+}
+.logos_rs a:hover{
+	color: #505050;
+}
+#email{
+	font-size: 40px; 
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#copyright{
+	font-size: 20px;
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: #464646;
+}
+.logos_rs{
+	font-size: 45px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.lecteur_video{
+	width: 100%;
+	height: auto;
+	top:0;
+	z-index: -2;
+	margin: 0px;
+}
+.div{
+	height: 50px;
+	text-align: center;
+	color: #484848;
+}
+.menu{float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+}
+.gris{
+	color: #707070;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+a:hover{
+	color:#707070;
+}
+
